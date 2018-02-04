@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="integrity_validation_JAVAFX.jnlp">
+    <information>
+        <title>integrity_validation_JAVAFX</title>
+        <vendor>Upendra</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9.0.1+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="integrity_validation_JAVAFX.jar" size="211510" download="eager"/>
+        <jar href="lib\mysql-connector-java-5.1.5-bin.jar" size="676693" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="integrity_validation_javafx.Integrity_validation_JAVAFX" name="Integrity_validation_JAVAFX"/>
+</jnlp>
+

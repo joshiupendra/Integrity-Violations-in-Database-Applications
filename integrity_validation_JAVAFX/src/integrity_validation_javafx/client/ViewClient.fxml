@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="600.0" prefWidth="1280.0" style="-fx-background-color: #BBDEFB;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="integrity_validation_javafx.client.ViewClientController">
+   <children>
+      <MenuBar layoutX="46.0" layoutY="42.0" prefHeight="27.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Manage">
+               <items>
+                  <MenuItem fx:id="edit" mnemonicParsing="false" onAction="#handleEditAction" text="Edit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Client Operations">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleCreateAction" text="Create" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleViewAction" text="View" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleDeleteAction" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Security">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleIntegrityEngineAction" text="Integrity Engine" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Logout">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleExitLogoutAction" text="Exit" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TableView fx:id="table" layoutX="126.0" layoutY="181.0" prefHeight="350.0" prefWidth="961.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="169.0">
+        <columns>
+            <TableColumn fx:id="username" prefWidth="75.0" text="Username" />
+          <TableColumn fx:id="name" prefWidth="105.0" text="Name" />
+          <TableColumn fx:id="address" prefWidth="125.0" text="Address" />
+            <TableColumn fx:id="dob" prefWidth="108.0" text="Date of Birth" />
+            <TableColumn fx:id="email" prefWidth="213.0" text="Email" />
+            <TableColumn fx:id="mob_num" prefWidth="128.0" text="Mobile Number" />
+            <TableColumn fx:id="cfor" prefWidth="89.0" text="Client For" />
+            <TableColumn fx:id="key" prefWidth="110.0" text="Key" />
+        </columns>
+      </TableView>
+      <Button fx:id="bank" layoutX="150.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleBankButtonAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="Bank">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="telecom" layoutX="438.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleTelecomButtonAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="TeleCOM">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="uid" layoutX="735.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleUIDButtonAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="UID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="all" layoutX="1011.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleAllButtonAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="All">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

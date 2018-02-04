@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="600.0" prefWidth="1280.0" style="-fx-background-color: #BBDEFB;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="integrity_validation_javafx.admin.Admin_LoginController">
+   <children>
+      <Label fx:id="exit" alignment="CENTER" layoutX="554.0" layoutY="24.0" onMouseClicked="#handleExitLableAction" prefHeight="20.0" prefWidth="33.0" style="-fx-background-color: red; -fx-text-fill: black;" text="Exit" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="97.0" prefHeight="30.0" prefWidth="526.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Admin Login" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Pane layoutX="609.0" layoutY="200.0" prefHeight="300.0" prefWidth="438.0" style="-fx-border-color: blue;" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0">
+         <children>
+            <TextField fx:id="username" layoutX="195.0" layoutY="46.0" prefHeight="39.0" prefWidth="390.0" promptText="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="195.0" layoutY="119.0" prefHeight="39.0" prefWidth="390.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="login" layoutX="149.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="clear" layoutX="539.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleClearButtonAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="Clear">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
